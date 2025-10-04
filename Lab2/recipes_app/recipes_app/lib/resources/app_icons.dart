@@ -7,4 +7,5 @@ class AppIcons {
   static Widget searchVisualIcon = SvgPicture.asset('resources/icons/search-normal.svg');
   static Widget starIcon = SvgPicture.asset('resources/icons/star-circle.svg');
   static Widget filter = SvgPicture.asset('resources/icons/filter.svg');
+  static Widget bookmark = Image.asset('resources/icons/Bookmark.png');
 }

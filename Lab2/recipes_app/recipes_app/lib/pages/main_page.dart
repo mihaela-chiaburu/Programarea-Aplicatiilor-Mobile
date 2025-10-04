@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:recipes_app/list_items/cuisinerow_list_item.dart';
 import 'package:recipes_app/list_items/nav_bar_list_item.dart';
+import 'package:recipes_app/list_items/recipe_row_list_item.dart';
+import 'package:recipes_app/list_items/search_bar_list_item.dart';
+import 'package:recipes_app/list_items/sized_box_list_item.dart';
 import 'package:recipes_app/pages/main_controller.dart';
+import 'package:recipes_app/widgets/cuisinerow_widget.dart';
+import 'package:recipes_app/widgets/recipe_row_widget.dart';
+import 'package:recipes_app/widgets/search_bar_widget.dart';
+import 'package:recipes_app/widgets/sized_box_widget.dart';
 import 'package:recipes_app/widgets/top_bar_widget.dart';
 
 void main() {
@@ -55,6 +63,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 var item = controller.items[index];
                 if (item is NavBarListItem) {
                   return TopNavBarWidget(item: item);
+                } else if (item is SizedBoxListItem) {
+                  return SizedBoxWidget(item: item);
+                }
+                else if (item is SearchBarListItem) {
+                  return SearchBarWidget(item: item);
+                }
+                else if (item is CuisineRowListItem) {
+                  return CuisineRowWidget(item: item);
+                }
+                else if (item is RecipeRowListItem) {
+                  return RecipeRowWidget(item: item);
                 }
                 return Text('Not found');
               },

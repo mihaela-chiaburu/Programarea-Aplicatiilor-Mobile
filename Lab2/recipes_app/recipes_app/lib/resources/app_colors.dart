@@ -5,4 +5,9 @@ class AppColors {
   static const Color grey4 = Color(0xFFA9A9A9);
   static const Color white = Color(0xFFFFFFFF);
   static const Color neutralgray = Color(0xFFD9D9D9);
+  static const Color greenbutton = Color(0xFF129575);
+  static const Color greentext = Color(0xFF71B1A1);
+  static const Color grey3 = Color(0xFF484848);
+  static const Color bgrating = Color(0xFFFFE1B3);
+  static const Color star = Color(0xFFFFAD30);
 }
