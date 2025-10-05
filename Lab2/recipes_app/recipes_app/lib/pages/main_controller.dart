@@ -2,10 +2,13 @@ import 'package:get/get.dart';
 import 'package:recipes_app/list_items/cuisine_select_list_item.dart';
 import 'package:recipes_app/list_items/cuisinerow_list_item.dart';
 import 'package:recipes_app/list_items/list_item.dart';
+import 'package:recipes_app/list_items/new_recipes_list_item.dart';
+import 'package:recipes_app/list_items/new_recipes_row_list_item.dart';
 import 'package:recipes_app/list_items/recipe_row_list_item.dart';
 import 'package:recipes_app/list_items/recipe_select_list_item.dart';
 import 'package:recipes_app/list_items/search_bar_list_item.dart';
 import 'package:recipes_app/list_items/sized_box_list_item.dart';
+import 'package:recipes_app/list_items/text_section_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
 import 'package:recipes_app/resources/app_icons.dart';
 import '../list_items/nav_bar_list_item.dart';
@@ -38,7 +41,6 @@ class MainController extends GetxController {
         CuisineSelectListItem(bgColor: AppColors.white, textColor: AppColors.greentext, textButton: 'Local Dishes'),
       ]
     ));
-    //items.add(SizedBoxListItem(size: 40.0));
     items.add(RecipeRowListItem(
       recipes: [
         RecipeSelectListItem(recipeName: 'Classic Greek Salad', imageUrl: 'resources/icons/salad.png', rating: '4.5', time: '15'),
@@ -46,6 +48,18 @@ class MainController extends GetxController {
         RecipeSelectListItem(recipeName: 'Shrimp Chicken Andouille', imageUrl: 'resources/icons/shrimp_chicken.png', rating: '4.5', time: '10'),
         RecipeSelectListItem(recipeName: 'Barbecue Chicken Jollof', imageUrl: 'resources/icons/barbecue.png', rating: '4.5', time: '10'),
         RecipeSelectListItem(recipeName: 'Portuguese Piri Piri Chicken', imageUrl: 'resources/icons/piri_piri.png', rating: '4.5', time: '15'),
+      ]
+    ));
+    items.add(SizedBoxListItem(size: 20.0));
+    items.add(TextSectionListItem(text: 'New Recipes'));
+    items.add(NewRecipesRowListItem(
+      newrecipes: [
+        NewRecipesListItem(recipeName: 'Steak with tomato sauce and bulgur rice.', imageUrl: 'resources/icons/card1.png', time: '20', authorName: 'James Milner', avatarUrl: 'resources/icons/avatar_card1.png'),
+        NewRecipesListItem(recipeName: 'Pilaf sweet with lamb-and-raisins', imageUrl: 'resources/icons/card2.png', time: '20', authorName: 'Laura Wilson', avatarUrl: 'resources/icons/avatar_card2.png'),
+        NewRecipesListItem(recipeName: 'Rice Pilaf, Broccoli and Chicken', imageUrl: 'resources/icons/card3.png', time: '20', authorName: 'Lucas Moura', avatarUrl: 'resources/icons/avatar_card3.png'),
+        NewRecipesListItem(recipeName: 'Chicken meal with sauce', imageUrl: 'resources/icons/card4.png', time: '20', authorName: 'Issabella Ethan', avatarUrl: 'resources/icons/avatar_card4.png'),
+        NewRecipesListItem(recipeName: 'Stir-fry chicken with broccoli in sweet and sour sauce and rice.', imageUrl: 'resources/icons/card5.png', time: '20', authorName: 'Miquel Ferran', avatarUrl: 'resources/icons/avatar_card5.png'),
+
       ]
     ));
   }

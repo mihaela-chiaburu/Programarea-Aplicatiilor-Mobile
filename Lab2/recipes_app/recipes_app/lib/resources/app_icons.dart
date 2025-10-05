@@ -8,4 +8,5 @@ class AppIcons {
   static Widget starIcon = SvgPicture.asset('resources/icons/star-circle.svg');
   static Widget filter = SvgPicture.asset('resources/icons/filter.svg');
   static Widget bookmark = Image.asset('resources/icons/Bookmark.png');
+  static Widget timer = Image.asset('resources/icons/timer.png');
 }
