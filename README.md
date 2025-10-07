@@ -6,3 +6,4 @@ The projects are built using the **Flutter framework**.
 ---
 
 Lab 1 – Temperature Converter App that converts temperatures between **Celsius**, **Fahrenheit**, and **Kelvin**.
+Lab 2 – Recipes app design
