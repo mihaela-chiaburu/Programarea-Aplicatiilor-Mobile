@@ -31,7 +31,7 @@ class RecipeWidget extends StatelessWidget {
                     width: 130,
                     height: 42,
                     child: Text(
-                      item.recipeName,
+                      item.recipe.recipeName,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: AppColors.grey3,
@@ -59,7 +59,7 @@ class RecipeWidget extends StatelessWidget {
                           ),
                           SizedBox(height: 5),
                           Text(
-                            "${item.time} Mins",
+                            "${item.recipe.time} Mins",
                             style: TextStyle(
                               color: AppColors.grey3,
                               fontSize: 11,
@@ -92,7 +92,7 @@ class RecipeWidget extends StatelessWidget {
             top: -65,
             left: -5,
             child: Image.asset(
-              item.imageUrl,
+              item.recipe.imageUrl,
               height: 160,
               width: 160,
               fit: BoxFit.cover,

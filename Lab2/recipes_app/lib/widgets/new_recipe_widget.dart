@@ -48,7 +48,7 @@ class NewRecipeWidget extends StatelessWidget {
                     Container(
                       width: 145,
                       child: Text(
-                        item.recipeName,
+                        item.newrecipe.recipeName,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
@@ -91,7 +91,7 @@ class NewRecipeWidget extends StatelessWidget {
                             AppIcons.timer,
                             SizedBox(width: 5),
                             Text(
-                              "${item.time} mins",
+                              "${item.newrecipe.time} mins",
                               style: TextStyle(
                                 color: AppColors.grey4,
                                 fontSize: 11,
@@ -111,7 +111,7 @@ class NewRecipeWidget extends StatelessWidget {
               top: -46,
               right: -15,
               child: Image.asset(
-                item.imageUrl,
+                item.newrecipe.imageUrl,
                 height: 130,
                 width: 130,
                 fit: BoxFit.contain,
