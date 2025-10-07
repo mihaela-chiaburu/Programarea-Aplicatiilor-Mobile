@@ -12,4 +12,6 @@ class AppIcons {
   static Widget author = Image.asset('resources/icons/povar.png');
   static Widget location = Image.asset('resources/icons/location.png');
   static Widget serves = Image.asset('resources/icons/serve-icon.png');
+  static Widget leftarrow = SvgPicture.asset('resources/icons/arrow-left.svg');
+  static Widget more = SvgPicture.asset('resources/icons/more.svg');
 }

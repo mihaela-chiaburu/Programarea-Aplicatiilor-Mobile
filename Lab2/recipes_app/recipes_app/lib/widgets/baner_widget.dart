@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/baner_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
+import 'package:recipes_app/resources/app_icons.dart';
 
 class BanerWidget extends StatelessWidget {
   const BanerWidget({super.key, required this.item});
@@ -28,8 +29,8 @@ class BanerWidget extends StatelessWidget {
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
                 colors: [
-                  Colors.black.withOpacity(0.5), // darker at bottom
-                  Colors.transparent, // fades upward
+                  Colors.black.withOpacity(0.5), 
+                  Colors.transparent,
                 ],
               ),
             ),
@@ -67,7 +68,7 @@ class BanerWidget extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                  Image.asset('resources/icons/timer.png'),
+                  AppIcons.timer,
                   SizedBox(width: 5),
                   Text(
                     "20 mins",
@@ -79,7 +80,7 @@ class BanerWidget extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 10),
-                  Image.asset('resources/icons/Bookmark.png'),
+                  AppIcons.bookmark,
                 ],),
             ],
           ),

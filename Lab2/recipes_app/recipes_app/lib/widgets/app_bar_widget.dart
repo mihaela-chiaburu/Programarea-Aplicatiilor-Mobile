@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/app_bar_list_item.dart';
-import 'package:svg_flutter/svg.dart';
+import 'package:recipes_app/pages/main_page.dart';
+import 'package:recipes_app/resources/app_icons.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key, required this.item});
@@ -12,8 +13,13 @@ class AppBarWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        SvgPicture.asset('resources/icons/arrow-left.svg'),
-        SvgPicture.asset('resources/icons/more.svg'),
+        GestureDetector(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const MyHomePage()));
+          },
+          child: AppIcons.leftarrow
+        ),
+        AppIcons.more,
       ],
     );
   }

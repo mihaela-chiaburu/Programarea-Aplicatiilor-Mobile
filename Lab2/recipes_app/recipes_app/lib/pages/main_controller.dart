@@ -43,11 +43,11 @@ class MainController extends GetxController {
     ));
     items.add(RecipeRowListItem(
       recipes: [
-        RecipeSelectListItem(recipeName: 'Classic Greek Salad', imageUrl: 'resources/icons/salad.png', rating: '4.5', time: '15'),
-        RecipeSelectListItem(recipeName: 'Crunchy Nut Coleslaw', imageUrl: 'resources/icons/nut_salad.png', rating: '3.5', time: '10'),
-        RecipeSelectListItem(recipeName: 'Shrimp Chicken Andouille', imageUrl: 'resources/icons/shrimp_chicken.png', rating: '4.5', time: '10'),
-        RecipeSelectListItem(recipeName: 'Barbecue Chicken Jollof', imageUrl: 'resources/icons/barbecue.png', rating: '4.5', time: '10'),
-        RecipeSelectListItem(recipeName: 'Portuguese Piri Piri Chicken', imageUrl: 'resources/icons/piri_piri.png', rating: '4.5', time: '15'),
+        RecipeSelectListItem(recipeName: 'Classic Greek Salad', imageUrl: 'resources/icons/salad.png', rating: '4.5', time: '15', bookmarks: AppColors.greentext),
+        RecipeSelectListItem(recipeName: 'Crunchy Nut Coleslaw', imageUrl: 'resources/icons/nut_salad.png', rating: '3.5', time: '10', bookmarks: AppColors.grey4),
+        RecipeSelectListItem(recipeName: 'Shrimp Chicken Andouille', imageUrl: 'resources/icons/shrimp_chicken.png', rating: '4.5', time: '10', bookmarks: AppColors.grey4),
+        RecipeSelectListItem(recipeName: 'Barbecue Chicken Jollof', imageUrl: 'resources/icons/barbecue.png', rating: '4.5', time: '10', bookmarks: AppColors.greentext),
+        RecipeSelectListItem(recipeName: 'Portuguese Piri Piri Chicken', imageUrl: 'resources/icons/piri_piri.png', rating: '4.5', time: '15', bookmarks: AppColors.grey4),
       ]
     ));
     items.add(SizedBoxListItem(size: 20.0));

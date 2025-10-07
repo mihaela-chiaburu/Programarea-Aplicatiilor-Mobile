@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/recipe_select_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
-import 'package:recipes_app/resources/app_icons.dart';
 
 class RecipeWidget extends StatelessWidget {
   const RecipeWidget({super.key, required this.item});
@@ -32,7 +31,6 @@ class RecipeWidget extends StatelessWidget {
                     width: 130,
                     height: 42,
                     child: Text(
-                      //"Classic Greek Salad",
                       item.recipeName,
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -71,7 +69,19 @@ class RecipeWidget extends StatelessWidget {
                           ),
                         ],
                       ),
-                      AppIcons.bookmark,
+                      Container(
+                        width: 24,
+                        height: 24,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.white,
+                        ),
+                        child: Icon(
+                          Icons.bookmark_outline_rounded,
+                          size: 15,
+                          color: item.bookmarks,
+                        ),
+                      )
                     ],
                   ),
                 ],
