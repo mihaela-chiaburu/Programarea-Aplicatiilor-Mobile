@@ -11,4 +11,5 @@ class AppColors {
   static const Color bgrating = Color(0xFFFFE1B3);
   static const Color star = Color(0xFFFFAD30);
   static const Color grey2 = Color(0xFFDFDFDF);
+  static const Color authorname = Color(0xFF121212);
 }

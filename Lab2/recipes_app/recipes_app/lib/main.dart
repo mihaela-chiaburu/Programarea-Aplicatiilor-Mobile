@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:get/get.dart';
-//import 'package:restaurnat_app/pages/MainController.dart';
 import 'package:recipes_app/pages/main_page.dart';
 
 
@@ -19,6 +17,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
 
 

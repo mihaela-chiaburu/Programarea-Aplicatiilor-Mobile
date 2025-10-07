@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.only(left: 30, top: 30),
+        padding: EdgeInsets.only(left: 30, top: 30,),
         child: Container(
           color: Colors.white,
           child: Obx(
