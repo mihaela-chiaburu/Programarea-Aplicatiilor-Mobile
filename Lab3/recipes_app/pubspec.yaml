@@ -1,0 +1,36 @@
+name: recipes_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get:
+  svg_flutter:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - resources/icons/
+    - resources/fonts/
+    - resources/data/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: resources/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: resources/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: resources/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: resources/fonts/Poppins-Bold.ttf
+          weight: 700
