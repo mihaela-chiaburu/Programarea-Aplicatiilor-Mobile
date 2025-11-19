@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/serve_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
 import 'package:recipes_app/resources/app_icons.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class ServeWidget extends StatelessWidget {
   const ServeWidget({super.key, required this.item});
@@ -18,7 +19,7 @@ class ServeWidget extends StatelessWidget {
             AppIcons.serves,
             SizedBox(width: 5,),
             Text(
-              '${item.serves} serve',
+              '${item.serves} ${Strings.serve}',
               style: TextStyle(
                 color: AppColors.grey4,
                 fontSize: 11,
@@ -30,7 +31,7 @@ class ServeWidget extends StatelessWidget {
         ),
 
         Text(
-          '${item.nritems} Items',
+          '${item.nritems} ${Strings.item}',
           style: TextStyle(
             color: AppColors.grey4,
             fontSize: 11,

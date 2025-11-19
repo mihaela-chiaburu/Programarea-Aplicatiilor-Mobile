@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/ingredient_procedure_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class IngredientProcedureWidget extends StatelessWidget {
   const IngredientProcedureWidget({super.key, required this.item});
@@ -22,7 +23,7 @@ class IngredientProcedureWidget extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 8, horizontal: 0),
           child: Center(
             child: Text(
-              'Ingredient',
+              Strings.ingrButton,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
@@ -44,7 +45,7 @@ class IngredientProcedureWidget extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 8, horizontal: 0),
           child: Center(
             child: Text(
-              'Procedure',
+              Strings.procedButton,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: AppColors.greentext,

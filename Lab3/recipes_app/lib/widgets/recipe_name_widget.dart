@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/recipe_name_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class RecipeNameWidget extends StatelessWidget {
   const RecipeNameWidget({super.key, required this.item});
@@ -29,7 +30,7 @@ class RecipeNameWidget extends StatelessWidget {
           ),
         ),
       Text(
-        '(${item.views} Reviews)',
+        '(${item.views} ${Strings.reviews})',
         style: TextStyle(
           color: AppColors.grey4,
           fontSize: 14,

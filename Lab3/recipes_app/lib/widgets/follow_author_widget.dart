@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/follow_author_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
 import 'package:recipes_app/resources/app_icons.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class FollowAuthorWidget extends StatelessWidget {
   const FollowAuthorWidget({super.key, required this.item});
@@ -56,7 +57,7 @@ class FollowAuthorWidget extends StatelessWidget {
           ),
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
           child: Text(
-            "Follow",
+            Strings.followButton,
             style: TextStyle(
               color: Colors.white,
               fontSize: 11,

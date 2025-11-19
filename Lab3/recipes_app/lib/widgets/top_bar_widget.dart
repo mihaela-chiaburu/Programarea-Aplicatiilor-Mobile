@@ -19,7 +19,7 @@ class TopNavBarWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hello ${item.username}",
+                "${Strings.greatings} ${item.username}",
                 style: const TextStyle(
                   color: AppColors.neutral650,
                   fontSize: 20,

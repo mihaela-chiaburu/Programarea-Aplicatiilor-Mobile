@@ -1,0 +1,18 @@
+{
+  "greetings": "Hello",
+  "question": "What are you cooking today?",
+  "searchRecipe": "Search recipe",
+  "newRecipes": "New Recipes",
+  "bannerRating": "4.0",
+  "bannerTime": "20 mins",
+  "followButton": "Follow",
+  "ingrButton": "Ingredient",
+  "procedButton": "Procedure",
+  "grams": "g",
+  "mins": "mins",
+  "by": "By",
+  "reviews": "Reviews",
+  "time": "Time",
+  "serve": "serve",
+  "item": "Items"
+}

@@ -3,6 +3,7 @@ import 'package:recipes_app/list_items/new_recipes_list_item.dart';
 import 'package:recipes_app/pages/recipe_page.dart';
 import 'package:recipes_app/resources/app_colors.dart';
 import 'package:recipes_app/resources/app_icons.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class NewRecipeWidget extends StatelessWidget {
   const NewRecipeWidget({super.key, required this.item});
@@ -76,7 +77,7 @@ class NewRecipeWidget extends StatelessWidget {
                             Image.asset(item.avatarUrl),
                             SizedBox(width: 8),
                             Text(
-                              "By ${item.authorName}",
+                              "${Strings.by} ${item.authorName}",
                               style: TextStyle(
                                 color: AppColors.grey4,
                                 fontSize: 11,
@@ -91,7 +92,7 @@ class NewRecipeWidget extends StatelessWidget {
                             AppIcons.timer,
                             SizedBox(width: 5),
                             Text(
-                              "${item.newrecipe.time} mins",
+                              "${item.newrecipe.time} ${Strings.mins}",
                               style: TextStyle(
                                 color: AppColors.grey4,
                                 fontSize: 11,

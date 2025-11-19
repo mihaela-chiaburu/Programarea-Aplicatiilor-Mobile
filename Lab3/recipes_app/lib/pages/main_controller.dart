@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:recipes_app/list_items/cuisine_select_list_item.dart';
@@ -31,7 +30,7 @@ class MainController extends GetxController {
 
     final navbar = NavBarListItem.fromJson(jsonData['navbar']);
     items.add(navbar);
-    
+
     items.add(SizedBoxListItem(size: 30));
     items.add(SearchBarListItem());
     items.add(SizedBoxListItem(size: 25));
@@ -47,7 +46,8 @@ class MainController extends GetxController {
     items.add(RecipeRowListItem(recipes: recipes));
     items.add(SizedBoxListItem(size: 20));
   
-    items.add(TextSectionListItem(text: 'New Recipes'));
+    final textSection = TextSectionListItem.fromJson(jsonData['textSection']);
+    items.add(textSection);
 
     final newRecipes = (jsonData['newRecipes'] as List)
         .map((e) => NewRecipesListItem.fromJson(e))

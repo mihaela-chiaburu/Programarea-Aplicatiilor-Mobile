@@ -6,4 +6,10 @@ class TextSectionListItem extends ListItem{
   TextSectionListItem({
     required this.text
   });
+
+  factory TextSectionListItem.fromJson(Map<String, dynamic> json) {
+    return TextSectionListItem(
+      text: json['text']
+    );
+  }
 }

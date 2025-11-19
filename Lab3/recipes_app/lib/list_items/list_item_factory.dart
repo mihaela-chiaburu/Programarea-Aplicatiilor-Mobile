@@ -7,6 +7,7 @@ import 'package:recipes_app/list_items/recipe_name_list_item.dart';
 import 'package:recipes_app/list_items/recipe_select_list_item.dart';
 import 'package:recipes_app/list_items/new_recipes_list_item.dart';
 import 'package:recipes_app/list_items/serve_list_item.dart';
+import 'package:recipes_app/list_items/text_section_list_item.dart';
 
 class ListItemFactory {
   static ListItem fromJson(String type, Map<String, dynamic> json) {
@@ -19,6 +20,7 @@ class ListItemFactory {
       case 'author' : return FollowAuthorListItem.fromJson(json);
       case 'serve' : return ServeListItem.fromJson(json);
       case 'ingredients' : return IngredientListItem.fromJson(json);
+      case 'textSection' : return TextSectionListItem.fromJson(json);
       default: throw Exception('Unknown list item type: $type');
     }
   }

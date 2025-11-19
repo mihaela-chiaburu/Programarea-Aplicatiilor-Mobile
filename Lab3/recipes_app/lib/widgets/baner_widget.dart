@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/baner_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
 import 'package:recipes_app/resources/app_icons.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class BanerWidget extends StatelessWidget {
   const BanerWidget({super.key, required this.item});
@@ -53,7 +54,7 @@ class BanerWidget extends StatelessWidget {
                       children: [
                         Icon(Icons.star, size: 10, color: AppColors.star),
                         Text(
-                          '4.0',
+                          Strings.bannerRating,
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 11,
@@ -71,7 +72,7 @@ class BanerWidget extends StatelessWidget {
                   AppIcons.timer,
                   SizedBox(width: 5),
                   Text(
-                    "20 mins",
+                    Strings.bannerTime,
                     style: TextStyle(
                       color: AppColors.neutralgray,
                       fontSize: 11,

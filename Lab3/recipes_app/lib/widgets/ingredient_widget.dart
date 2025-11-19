@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/ingredient_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class IngredientWidget extends StatelessWidget {
   const IngredientWidget({super.key, required this.item});
@@ -50,7 +51,7 @@ class IngredientWidget extends StatelessWidget {
               ],
             ),
             Text(
-              '${item.grams}g',
+              '${item.grams}${Strings.grams}',
               style: TextStyle(
                 color: AppColors.grey4,
                 fontSize: 14,

@@ -55,6 +55,9 @@
             "textColor": "#71B1A1"
         }
     ],
+    "textSection" : {
+        "text": "New Recipes"
+    },
     "recipes": [
         {
             "recipeName": "Classic Greek Salad",

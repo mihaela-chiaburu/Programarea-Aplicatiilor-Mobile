@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/list_items/recipe_select_list_item.dart';
 import 'package:recipes_app/resources/app_colors.dart';
+import 'package:recipes_app/resources/strings.dart';
 
 class RecipeWidget extends StatelessWidget {
   const RecipeWidget({super.key, required this.item});
@@ -49,7 +50,7 @@ class RecipeWidget extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Time",
+                            Strings.time,
                             style: TextStyle(
                               color: AppColors.grey4,
                               fontSize: 11,
@@ -59,7 +60,7 @@ class RecipeWidget extends StatelessWidget {
                           ),
                           SizedBox(height: 5),
                           Text(
-                            "${item.recipe.time} Mins",
+                            "${item.recipe.time} ${Strings.mins}",
                             style: TextStyle(
                               color: AppColors.grey3,
                               fontSize: 11,

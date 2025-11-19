@@ -20,6 +20,7 @@ class RecipeController extends GetxController {
     super.onInit();
     loadData();
   }
+  
   Future<void> loadData() async {
     final String dataString = await rootBundle.loadString('resources/data/data_recipe_page.json');
     final Map<String, dynamic> jsonData = jsonDecode(dataString);
@@ -51,6 +52,5 @@ class RecipeController extends GetxController {
         .map((e) => IngredientListItem.fromJson(e))
         .toList();
     items.add(IngredientRowListItem(ingredients: ingredients));
-
   }
 }
