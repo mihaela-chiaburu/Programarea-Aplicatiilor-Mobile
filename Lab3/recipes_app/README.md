@@ -1,5 +1,5 @@
-# Lab 2 – Recipes app design
-App creation according to complex design defined in Figma.
+# Lab 3 – State Management & Asynchronous Programming
+Recipes app with GetX state management and local JSON data loading.
 
 <img width=auto height="500" alt="image" src="https://github.com/user-attachments/assets/85edb8b3-f645-4bf1-b120-fe1e67c301d3" />
 <img width=auto height="500" alt="image" src="https://github.com/user-attachments/assets/31946a93-02a0-4bba-876e-4063f549d8ff" />
@@ -7,6 +7,8 @@ App creation according to complex design defined in Figma.
 
 
 ### Requirements
-- Implement the app based on the provided Figma design.
-- Use advanced UI components and maintain a clean project structure.
-- Organize the app into reusable and well-structured components.
+- **State Management**: Implement GetX for reactive state management
+- **Asynchronous Programming**: Load data asynchronously from local JSON files
+- **JSON Data Handling**: Parse and deserialize JSON data stored in the application
+- **GetX Features**: Utilize GetX controllers, reactive variables (Rx), and dependency injection
+- Maintain clean project structure with separation of concerns
