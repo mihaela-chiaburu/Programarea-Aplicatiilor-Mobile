@@ -1,0 +1,135 @@
+{
+    "navbar": {
+        "username": "Jega",
+        "image": "resources/icons/avatar.png"
+    },
+    "cuisines": [
+        {
+            "textButton": "All",
+            "bgColor": "#129575",
+            "textColor": "#FFFFFF"
+        },
+        {
+            "textButton": "Indian",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Italian",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Asian",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Chinese",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Fruit",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Vegetables",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Protein",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Cereal",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        },
+        {
+            "textButton": "Local Dishes",
+            "bgColor": "#FFFFFF",
+            "textColor": "#71B1A1"
+        }
+    ],
+    "textSection" : {
+        "text": "New Recipes"
+    },
+    "recipes": [
+        {
+            "recipeName": "Classic Greek Salad",
+            "imageUrl": "resources/icons/salad.png",
+            "time": "15",
+            "rating": "4.5",
+            "bookmarksColor": "#71B1A1"
+        },
+        {
+            "recipeName": "Crunchy Nut Coleslaw",
+            "imageUrl": "resources/icons/nut_salad.png",
+            "time": "10",
+            "rating": "3.5",
+            "bookmarksColor": "#A9A9A9"
+        },
+        {
+            "recipeName": "Shrimp Chicken Andouille",
+            "imageUrl": "resources/icons/shrimp_chicken.png",
+            "time": "10",
+            "rating": "4.5",
+            "bookmarksColor": "#A9A9A9"
+        },
+        {
+            "recipeName": "Barbecue Chicken Jollof",
+            "imageUrl": "resources/icons/barbecue.png",
+            "time": "10",
+            "rating": "4.5",
+            "bookmarksColor": "#71B1A1"
+        },
+        {
+            "recipeName": "Portuguese Piri Piri Chicken",
+            "imageUrl": "resources/icons/piri_piri.png",
+            "time": "15",
+            "rating": "4.5",
+            "bookmarksColor": "#A9A9A9"
+        }
+    ],
+    "newRecipes": [
+        {
+            "recipeName": "Steak with tomato sauce and bulgur rice.",
+            "imageUrl": "resources/icons/card1.png",
+            "time": "20",
+            "authorName": "James Milner",
+            "avatarUrl": "resources/icons/avatar_card1.png"
+        },
+        {
+            "recipeName": "Pilaf sweet with lamb-and-raisins",
+            "imageUrl": "resources/icons/card2.png",
+            "time": "20",
+            "authorName": "Laura Wilson",
+            "avatarUrl": "resources/icons/avatar_card2.png"
+        },
+        {
+            "recipeName": "Rice Pilaf, Broccoli and Chicken",
+            "imageUrl": "resources/icons/card3.png",
+            "time": "20",
+            "authorName": "Lucas Moura",
+            "avatarUrl": "resources/icons/avatar_card3.png"
+        },
+        {
+            "recipeName": "Chicken meal with sauce",
+            "imageUrl": "resources/icons/card4.png",
+            "time": "20",
+            "authorName": "Issabella Ethan",
+            "avatarUrl": "resources/icons/avatar_card4.png"
+        },
+        {
+            "recipeName": "Stir-fry chicken with broccoli in sweet and sour sauce and rice.",
+            "imageUrl": "resources/icons/card5.png",
+            "time": "20",
+            "authorName": "Miquel Ferran",
+            "avatarUrl": "resources/icons/avatar_card5.png"
+        }
+    ]
+}
