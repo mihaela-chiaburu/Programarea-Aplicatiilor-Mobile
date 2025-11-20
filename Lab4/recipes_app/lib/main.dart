@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:recipes_app/core/di/injection_container.dart';
-import 'package:recipes_app/pages/main_page.dart';
+import 'package:recipes_app/presentation/pages/main_page.dart';
 
 void main() {
   InjectionContainer.init();
